@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="StudyRoomApp">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>My AngularJS App</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+    <link rel="stylesheet" href="asset/css/app.css">
+</head>
+<body ng-controller="StudyRoomController">
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">스터디룸 찾기</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <!--/.nav-collapse -->
+    </div>
+</nav>
+
+<div class="content-wrapper container-fluid">
+    <div class="row no-gutter">
+
+        <div id="map" class="sr-map-area col-md-9">
+            <!-- 맵은 자바스크립트를 사용하여 여기 입력된다. -->
+        </div>
+
+        <div class="col-md-3 sr-search-area">
+            <div class="sr-search-input-wrapper">
+
+                <div class="sr-search-input input-group input-group-sm">
+                    <input type="text" class="form-control" placeholder="Search for...">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button">Go!</button>
+                    </span>
+                </div>
+                <!-- /input-group -->
+            </div>
+
+            <div class="sr-list-wrapper">
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <h1>제목</h1>
+                        <div>상세설명</div>
+                    </li>
+                    <li class="list-group-item">
+                        <h1>제목</h1>
+                        <div>상세설명</div>
+                    </li>
+                    <li class="list-group-item">
+                        <h1>제목</h1>
+                        <div>상세설명</div>
+                    </li>
+                    <li class="list-group-item">
+                        <h1>제목</h1>
+                        <div>상세설명</div>
+                    </li>
+                    <li class="list-group-item">
+                        <h1>제목</h1>
+                        <div>상세설명</div>
+                    </li>
+                    <li class="list-group-item">
+                        <h1>제목</h1>
+                        <div>상세설명</div>
+                    </li>
+                    <li class="list-group-item">
+                        <h1>제목</h1>
+                        <div>상세설명</div>
+                    </li>
+                    <li class="list-group-item">
+                        <h1>제목</h1>
+                        <div>상세설명</div>
+                    </li>
+                    <li class="list-group-item">
+                        <h1>제목</h1>
+                        <div>상세설명</div>
+                    </li>
+
+
+                </ul>
+            </ul>
+            <!--/studyroom-list-wrapper-->
+        </div>
+
+    </div>
+    <!-- /row-->
+</div>
+<!-- /container-->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<script src="components/angular/angular.js"></script>
+<script src="components/angular-route/angular-route.js"></script>
+<script src="//apis.daum.net/maps/maps3.js?apikey=67dfa100752569872c842948a394a725"></script>
+
+<script src="asset/js/app.js"></script>
+<script src="asset/js/controller.js"></script>
+
+</body>
+</html>
